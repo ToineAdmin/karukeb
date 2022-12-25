@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* Logo */
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* Navbar */
+
+h5{
+    font-size: 1.5em;
+}
+
+.nav-links{
+    text-align: center;
+    font-size : 1.2em;
+    font-weight: bold;
+}
