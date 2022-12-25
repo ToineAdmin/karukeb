@@ -14,6 +14,10 @@
 
 /* Navbar */
 
+.navbar{
+    height: 80px;
+}
+
 h5{
     font-size: 1.5em;
 }
@@ -22,6 +26,15 @@ h5{
     text-align: center;
     font-size : 1.2em;
     font-weight: bold;
+}
+
+.nav-link{
+    padding-top: 25px;
+}
+
+.offcanvas-body{
+    display: flex;
+    align-items: center;
 }
 
 @media (min-width:992px){
@@ -43,7 +56,78 @@ h5{
     background-position: center;
 }
 
+.title{
+    height: 35vh;
+    position: relative;
+}
+
 
 h1{
+    position: absolute;
+    bottom:0;
+    text-align: center;
+    width: fit-content;
     color:white;
+    text-shadow: 3px 3px 3px black;
+}
+
+.slogan{
+    visibility: hidden;
+}
+
+@media (min-width: 768px){
+    .title{
+        height: 30vh;
+    }
+
+}
+@media (min-width: 992px){
+    .banner{
+        height: 100vh;
+    }
+
+    .title{
+        width: 50%;
+        height: 100px;
+    }
+
+    h1{
+        position:relative;
+        display:flex;
+        margin-left: 50px;
+        font-size: 3em;
+    }
+    .slogan{
+        visibility: visible;
+        color:white;
+        font-style: italic;
+        margin-left: 50px;
+        font-size: 1.5em;
+        text-shadow: 3px 3px 3px black;
+        text-align: start;
+    }
+
+}
+
+section{
+    height: 100vh;
+}
+
+.accueil{
+    background-color: rgb(53, 53, 53);
+}
+
+.menu{
+    background-color: whitesmoke;
+}
+
+.s-faire{
+    background-color: rgb(53, 53, 53);
+}
+.contact{
+    background-color:whitesmoke;
+}
+
+footer{
+    height: 15vh;
 }
