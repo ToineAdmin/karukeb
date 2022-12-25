@@ -23,3 +23,27 @@ h5{
     font-size : 1.2em;
     font-weight: bold;
 }
+
+@media (min-width:992px){
+    .nav-link{
+    transition: 0.3s ease-out;
+    }
+
+    .nav-link:hover {
+    font-size: 1.3em;
+    }
+}
+
+/* banner */
+
+.banner{
+    height: 50vh;
+    background-image: url(/img/ban-kebab.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+h1{
+    color:white;
+}
