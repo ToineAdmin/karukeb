@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-dark bg-dark fixed-top" id="navbar">
             <div class="container-fluid">
                 <a class="logo navbar-brand" href="#">KARUKEB</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
@@ -44,8 +44,11 @@
                 <h1>Karukeb: le kebab fait maison !</h1>
                 <div class="slogan">
                     <p>Nos produits locaux, cuisinés avec patience et passion !</p>
-                    <button class="discover-btn" role="button">Découvrir</button>
-                </div>  
+                </div> 
+                <div class="banner-btn">
+                    <a class="discover-btn" href="#accueil"> Découvrir</a></span>
+                    <a class="menu-btn" href="#menu"> Menu</a></span>
+                </div> 
             </div>      
         </section>     
     </header>
@@ -54,22 +57,26 @@
         <section class="accueil container-fluid" id="accueil">
             <div class="container w-80">
                 <div class="row ac-body">
-                    <div class="ac-text col-5">
-                        <h3 class="text-center">Des produits locaux et maison.</h3><br>
+                    <div class="ac-text col-lg-5 col-sm-12">
+                        <h3 class="text-center" id="accueil">Des produits locaux et maison.</h3><br>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugit vel natus maiores ducimus
                             eos corrupti sapiente minus at officiis magni laboriosam, pariatur dicta necessitatibus, odit dolorum.
                             At animi fugiat dolorem est commodi laborum explicabo fuga odit deleniti, harum dicta necessitatibus 
                             possimus quasi exercitationem cum excepturi, mollitia doloribus. Vitae ut, quam, dolore id explicabo inventore,
-                            in qui beatae ad fugit quae placeat nihil ea asperiores temporibus?<br><br> Delectus debitis laboriosam aliquid natus,
+                            in qui beatae ad fugit quae placeat nihil ea asperiores temporibus?<br><br>
+
+                            Delectus debitis laboriosam aliquid natus,
                             dignissimos eligendi consectetur dolor, id alias culpa odio sit voluptate deserunt quibusdam quisquam distinctio quia recusandae esse?
                             Ipsum a quidem earum, unde, ad, dignissimos blanditiis tempora perspiciatis minima labore accusantium 
-                            fugit consequuntur consequatur sint animi eveniet repudiandae non explicabo.<br><br> Amet et deserunt illo suscipit? Eum rem dolore,
+                            fugit consequuntur consequatur sint animi eveniet repudiandae non explicabo.<br><br>
+
+                            Amet et deserunt illo suscipit? Eum rem dolore,
                             pariatur id repudiandae quod sit exercitationem vero asperiores quis! Repudiandae natus asperiores incidunt labore laborum quo dolor quia,
-                            at tempore voluptatem eius provident, veritatis, temporibus et ducimus accusamus? Quibusdam autem accusamus distinctio!
-                        </p>
+                            at tempore voluptatem eius provident, veritatis, temporibus et ducimus accusamus? Quibusdam autem accusamus distinctio! 
+                        </p>   
                     </div>
-                    <div class="col-5 img">
+                    <div class="ac-img col-lg-5 col-sm-12 img">
                         <img src="/img/ac-img.jpg" alt="Préparation kebab">
                     </div>
                 </div>
@@ -94,8 +101,7 @@
     
 
 
-    <script src="/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/js/bootstrap.min.js"></script>
     <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
 </body>
 </html>
