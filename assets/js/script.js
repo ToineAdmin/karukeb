@@ -1,5 +1,6 @@
 let lastScroll = 0;
-const navbar = document.querySelector("#navbar")
+const navbar = document.querySelector("#navbar");
+
 
 window.addEventListener('scroll', (e) =>{
     if(window.scrollY < lastScroll){
@@ -8,4 +9,24 @@ window.addEventListener('scroll', (e) =>{
         navbar.style.top = "-80px";
     }
     lastScroll= window.scrollY;
+});
+
+
+window.addEventListener("scroll", (e) => {
+
+let scrollValue = (window.scrollY + window.innerHeight) / document.body.offsetHeight; // multiplier par 100 si % désiré    
+
+//text-accueil
+    if(scrollValue > 0.25){
+        actext.style.opacity = 1;
+        actext.style.transform ="none";
+    }
+
+// img accueil
+    if(scrollValue > 0.30){
+        acimg.style.opacity = 1;
+        acimg.style.transform = 'none';
+    }
+
+   
 });

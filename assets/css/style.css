@@ -115,6 +115,7 @@ h1{
     text-decoration: none;
 }
 
+
 @media (min-width: 768px){
 
     .title{
@@ -162,6 +163,7 @@ section{
 }
 
 /* Accueil */
+
 .accueil{
     height: fit-content;
 }
@@ -174,6 +176,18 @@ section{
 .ac-body{
     display: flex;
     flex-direction: column;
+}
+
+#actext{
+    opacity: 0;
+    transform: translateX(-400px);
+    transition: 0.5s ease-out;
+}
+
+#acimg{
+    opacity: 0;
+    transform: translateX(400px);
+    transition: 0.5s ease-out;
 }
 
 
@@ -204,7 +218,7 @@ section{
     }
     img:hover{
         filter: grayscale(0);
-        transform:rotate(3deg) scale(1.12);
+        transform:scale(1.12);
     }
 }
 
