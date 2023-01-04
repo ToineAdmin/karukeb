@@ -17,7 +17,7 @@ window.addEventListener("scroll", (e) => {
 let scrollValue = (window.scrollY + window.innerHeight) / document.body.offsetHeight; // multiplier par 100 si % désiré    
 
 //text-accueil
-    if(scrollValue > 0.25){
+    if(scrollValue > 0.25 ){
         actext.style.opacity = 1;
         actext.style.transform ="none";
     }
