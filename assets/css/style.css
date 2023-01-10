@@ -99,10 +99,10 @@ h1{
     justify-content: center;
     width: 120px;
     height: 50px;
-    border-radius: 30px;
-    border: solid 3px rgb(255, 255, 255);
+    border-radius:10px;
+    border: solid 3px rgba(255, 255, 255, 0.705);
     background-color: rgba(49, 40, 40, 0.63);
-    color: white;
+    color: rgba(255, 255, 255, 0.705);
     font-weight: bold; 
 }
 
@@ -136,6 +136,15 @@ h1{
         justify-content:center;
         column-gap: 50px;
         margin:0 ;
+    }
+
+    .banner-btn .ban-btn{
+        transition: 0.3s ease-out;
+    }
+
+    .banner-btn .ban-btn:hover{
+        width: 150px;
+        border-radius: 6% 94% 12% 88% / 86% 0% 100% 14% ;
     }
 
     .title{

@@ -1,7 +1,7 @@
 let lastScroll = 0;
 const navbar = document.querySelector("#navbar");
 
-
+// navbar disparition
 window.addEventListener('scroll', (e) =>{
     if(window.scrollY < lastScroll){
         navbar.style.top = "0px";
@@ -27,6 +27,4 @@ let scrollValue = (window.scrollY + window.innerHeight) / document.body.offsetHe
         acimg.style.opacity = 1;
         acimg.style.transform = 'none';
     }
-
-   
 });
