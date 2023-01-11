@@ -28,3 +28,14 @@ let scrollValue = (window.scrollY + window.innerHeight) / document.body.offsetHe
         acimg.style.transform = 'none';
     }
 });
+
+// mobile menu disparait onclick
+const links = document.querySelectorAll(".nav-link");
+
+links.forEach(link => {
+    link.addEventListener('click',(e)=>{
+        setTimeout(() => {
+        closebtn.click()  ;
+        }, 400);
+    })
+});
