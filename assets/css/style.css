@@ -102,7 +102,7 @@ h1{
     justify-content: center;
     width: 140px;
     height: 60px;
-    border-radius:87% 13% 80% 20% / 32% 66% 34% 68% ;
+    border-radius: 15px ;
     border: solid 3px rgba(255, 255, 255, 0.726);
     background-color: rgba(49, 40, 40, 0.699);
     font-weight: bold; 
@@ -142,6 +142,7 @@ h1{
 
     .banner-btn .ban-btn{
         transition: 0.3s ease-out;
+        border-radius:87% 13% 80% 20% / 32% 66% 34% 68% ;
     }
 
     .banner-btn .ban-btn:hover{
@@ -185,6 +186,7 @@ section{
     background-color: rgb(53, 53, 53);
     color: whitesmoke;
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     text-align: justify;
     padding-top: 50px;
@@ -198,7 +200,7 @@ section{
  
 .ac-body{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
 }
 
 
@@ -250,11 +252,86 @@ section{
 }
 
 
-
+/* ------ MENU -------*/
 
 .menu{
     background-color: whitesmoke;
+    padding-top: 50px;
+    overflow:scroll;
+    border: 2px solid rgba(0, 0, 0, 0.384);
+    margin : 8px 8px 8px 8px;
 }
+
+
+.menu h2{
+    font-size: 2em;
+    margin-top:0;
+    padding-bottom: 45px;
+}
+
+.menu .container h3{
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.menu .container h5{
+    font-size: 1em;
+}
+
+
+.menu .container .row{
+    margin-bottom: 25px;
+}
+
+.menu .card{
+    margin-bottom: 20px;
+}
+
+.menu .card:hover{
+    cursor: pointer;
+}
+/* ---- toggle ---*/
+@media(max-width: 992px){
+    .cardactive{
+        height: 250px;
+        transition: 0.5s ease-out;
+    }
+}
+
+/* ---- toggle ---*/
+.menu p {
+    font-style: italic;
+}
+
+@media(min-width: 992px){
+    .menu {
+        border:none;
+        margin : 0 auto;
+    }
+
+    .menu .container h3::before{
+        content: '';
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.644);
+        width: 45%;
+        height: 2px;
+        top:15px;
+        left:-100px;
+    }
+    
+    .menu .container h3::after{
+        content: '';
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.644);
+        width: 45%;
+        height: 2px;
+        top:15px;
+        right:-100px;
+    }
+
+}
+
+
 
 .s-faire{
     background-color: rgb(53, 53, 53);
