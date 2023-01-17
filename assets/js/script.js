@@ -27,6 +27,7 @@ let scrollValue = (window.scrollY + window.innerHeight) / document.body.offsetHe
         acimg.style.opacity = 1;
         acimg.style.transform = 'none';
     }
+    
 });
 
 // mobile menu disparait onclick
@@ -45,8 +46,13 @@ const cards = document.querySelectorAll(".card");
 
 cards.forEach(card =>{
     card.addEventListener('click', ()=>{
-        card.classList.toggle('cardactive');
+        let cardactive = card.classList.toggle('cardactive'); 
+        if (cardactive === true){
+            kebab1.style.opacity=1;
+            kebab1.style.transition= '0.5s ease-out' 
+        } else{
+            kebab1.style.opacity = 0;
+            kebab1.style.transition ='0s'
+        }  
     });
-    
-    
 })
