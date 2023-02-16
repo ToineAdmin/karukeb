@@ -201,11 +201,11 @@ section{
 .ac-body{
     display: flex;
     flex-direction: column; 
+    flex-wrap: wrap;
 }
 
-#acimg{
+.ac-img{
     opacity: 0;
-    transform: translateX(400px);
     transition: 0.5s ease-out;
 }
 
@@ -241,12 +241,6 @@ section{
         border-radius: 0;
     }
 
-    #actext{
-        opacity: 0;
-        transform: translateX(-400px);
-        transition: 0.5s ease-out;
-    }
-    
     
 }
 
@@ -523,3 +517,25 @@ section{
 footer{
     height: 15vh;
 }
+
+
+/* -------- ANIMATION ---------*/
+
+.unset-left{
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: 1s ease-out;
+}
+
+.unset{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s east-out;
+}
+
+.show{
+    opacity: 1;
+    transform: none;
+    transition: 1s;
+}
+

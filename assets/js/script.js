@@ -11,7 +11,7 @@ window.addEventListener('scroll', (e) =>{
     lastScroll= window.scrollY;
 });
 
-
+// ------ APPARITION BOX TIME LINE ------
 const allBoxes = document.querySelectorAll('.box');
 let boxPositions = [
     {position: 'calc(50% - 270px)', threshold: 0.62},
@@ -59,23 +59,6 @@ window.addEventListener('scroll', handleScroll);
 
 
 
-window.addEventListener("scroll", (e) => {
-    let scrollValue = (window.scrollY + window.innerHeight) / document.body.offsetHeight; // multiplier par 100 si % désiré    
-    const allBoxes = document.querySelectorAll('.box');
-//text-accueil
-    if(scrollValue > 0.25 ){
-        actext.style.opacity = 1;
-        actext.style.transform ="none";
-    }
-
-// img accueil
-    if(scrollValue > 0.28){
-        acimg.style.opacity = 1;
-        acimg.style.transform = 'none';
-    }
-});
-
-
 // mobile menu disparait onclick
 const links = document.querySelectorAll(".nav-link");
 
@@ -87,21 +70,43 @@ links.forEach(link => {
     })
 });
 
+// ---------- A recontroler appartition d'image onclick (verifer CSS et HTML)------- 
+// const cards = document.querySelectorAll(".card");
 
-const cards = document.querySelectorAll(".card");
+// cards.forEach(card =>{
+//     card.addEventListener('click', ()=>{
+//         let cardactive = card.classList.toggle('cardactive'); 
+//         if (cardactive === true){
+//             kebab1.style.opacity=1;
+//             kebab1.style.transition= '0.5s ease-out' 
+//         } else{
+//             kebab1.style.opacity = 0;
+//             kebab1.style.transition ='0s'
+//         }  
+//     });
+// })
 
-cards.forEach(card =>{
-    card.addEventListener('click', ()=>{
-        let cardactive = card.classList.toggle('cardactive'); 
-        if (cardactive === true){
-            kebab1.style.opacity=1;
-            kebab1.style.transition= '0.5s ease-out' 
-        } else{
-            kebab1.style.opacity = 0;
-            kebab1.style.transition ='0s'
-        }  
-    });
-})
+
+const elementsUnset = document.querySelectorAll('.unset-left, .unset');
+console.log(elementsUnset);
+
+
+window.addEventListener('scroll', checkElements);
+
+
+function checkElements(){
+    const trigger = window.innerHeight / 5 * 4;
+    elementsUnset.forEach(element =>{
+        const elementTop = element.getBoundingClientRect().top;
+
+        if (elementTop < trigger){
+           element.classList.add('show'); 
+        }
+    })
+}
+
+checkElements();
+
 
 
 // SAVOIR FAIRE APPARARITION 
