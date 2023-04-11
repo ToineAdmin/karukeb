@@ -90,6 +90,7 @@ h1{
     text-shadow: 3px 3px 3px black;
 }
 
+
 .slogan{
     visibility: hidden;
 }
@@ -353,6 +354,7 @@ section{
 .s-faire{
     background-color: rgb(53, 53, 53);
     height: auto;
+    padding-top : 0;
 }
 
 .s-faire h2{
@@ -511,11 +513,130 @@ section{
 /* ----------- CONTACT ---------- */
 
 .contact{
-    background-color: whitesmoke !important;
+    background-color: rgb(206, 205, 205) !important;
 }
 
+form h2 {
+    text-align: center;
+}
+.formulaire{
+    position: relative;
+}
+
+.submit-btn {
+    text-align: center;
+}
+
+form{
+    height: 350px;
+    padding: 3rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius : 20px;
+    border-left : 1px solid rgba(255,255,255,.5);
+    border-top : 1px solid rgba(255,255,255,.5);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter : blur(10px);
+    transform-origin:center;
+    transform:perspective(800px) rotateY(-10deg);
+    transition: all .5s;
+}
+
+
+
+form:hover{
+    transform-origin:center;
+    transform:perspective(800px) rotateY(0deg);
+}
+.input{
+    background: transparent !important;
+    border : none;
+    border-left : 1px solid rgba(255,255,255,.4);
+    border-top : 1px solid rgba(255,255,255,.4);
+    padding : 1rem;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter : blur(5px);
+    box-shadow: 4px 4px 60px rgba(0,0,0,.2);
+}
+
+.drop {
+    background: rgba(255,255,255,.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter : blur(10px);
+    position: absolute;
+    border-left : 1px solid rgba(255,255,255,.4);
+    border-top : 1px solid rgba(255,255,255,.4);
+    border-radius: 10px;
+    box-shadow: 10px 10px 60px -8px rgba(0,0,0,.2);
+    transform-origin:center;
+    transform:perspective(800px) rotateY(-10deg);
+    transition: all .5s;
+}
+
+.drop-1{
+    height: 80px;
+    width: 80px;
+    left: -50px;
+    top: -30px;
+
+}
+
+.drop-2{
+    height: 120px;
+    width: 120px;
+    right: -80px;
+    bottom: -60px;
+
+}
+
+.drop-3{
+    height: 20px;
+    width: 20px;
+    right: -25px;
+    top: 40px;
+    border-radius: 5px;
+}
+
+form:hover>.drop{
+    transform-origin:center;
+    transform:perspective(800px) rotateY(0deg);
+}
+
+form:hover>.drop-1{
+    left: -30px;
+    top: -50px;
+}
+
+form:hover>.drop-2{
+    right: -100px;
+    bottom: -80px;
+}
+
+form:hover>.drop-3{
+    right:-30px;
+    top: -30px;
+}
+
+.adress {
+    text-align: center;
+}
+.map{
+    display: block;
+    margin-left: 100px;
+    border-radius: 20px;
+}
+
+
+/* ------- FOOTER ---- */
+
 footer{
+    background-color:rgb(53, 53, 53);
     height: 15vh;
+    color:white;
 }
 
 
