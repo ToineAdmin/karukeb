@@ -513,6 +513,8 @@ section{
 /* ----------- CONTACT ---------- */
 
 .contact{
+    display: flex;
+    align-items: center;
     background-color: rgb(206, 205, 205) !important;
 }
 
@@ -539,7 +541,7 @@ form{
     -webkit-backdrop-filter: blur(10px);
     -moz-backdrop-filter : blur(10px);
     transform-origin:center;
-    transform:perspective(800px) rotateY(-10deg);
+    transform:perspective(800px) rotateY(-10deg) translateX(-50px);
     transition: all .5s;
 }
 
@@ -578,17 +580,17 @@ form:hover{
 }
 
 .drop-1{
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     left: -50px;
     top: -30px;
 
 }
 
 .drop-2{
-    height: 120px;
-    width: 120px;
-    right: -80px;
+    height: 80px;
+    width: 80px;
+    right: -50px;
     bottom: -60px;
 
 }
@@ -612,8 +614,8 @@ form:hover>.drop-1{
 }
 
 form:hover>.drop-2{
-    right: -100px;
-    bottom: -80px;
+    right: -65px;
+    bottom: -60px;
 }
 
 form:hover>.drop-3{
@@ -622,11 +624,27 @@ form:hover>.drop-3{
 }
 
 .adress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
     text-align: center;
 }
+
+.adress a{
+    font-weight: bold;
+    text-decoration: none;
+    color:black;
+}
+
+
+.email{
+    margin-bottom: 0;
+}
+
 .map{
-    display: block;
-    margin-left: 100px;
+    width: 300px;
+    height: 300px;
     border-radius: 20px;
 }
 
@@ -637,6 +655,13 @@ footer{
     background-color:rgb(53, 53, 53);
     height: 15vh;
     color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    margin-bottom: 0;
 }
 
 
