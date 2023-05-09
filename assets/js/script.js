@@ -34,6 +34,7 @@ function handleScroll() {
 function setBoxStyle(box, opacity, position) {
     box.style.opacity = opacity;
     box.style.left = position;
+
 }
 
 if(window.matchMedia("(max-width : 1000px)").matches) {
@@ -70,25 +71,8 @@ links.forEach(link => {
     })
 });
 
-// ---------- A recontroler appartition d'image onclick (verifer CSS et HTML)------- 
-// const cards = document.querySelectorAll(".card");
-
-// cards.forEach(card =>{
-//     card.addEventListener('click', ()=>{
-//         let cardactive = card.classList.toggle('cardactive'); 
-//         if (cardactive === true){
-//             kebab1.style.opacity=1;
-//             kebab1.style.transition= '0.5s ease-out' 
-//         } else{
-//             kebab1.style.opacity = 0;
-//             kebab1.style.transition ='0s'
-//         }  
-//     });
-// })
-
 
 const elementsUnset = document.querySelectorAll('.unset-left, .unset');
-console.log(elementsUnset);
 
 
 window.addEventListener('scroll', checkElements);
@@ -106,24 +90,3 @@ function checkElements(){
 }
 
 checkElements();
-
-
-
-// SAVOIR FAIRE APPARARITION 
-
-// const allRonds = document.querySelectorAll('.rond');
-// const allBoxes = document.querySelectorAll ('.box');
-
-// const controller = new ScrollMagic.Controller()
-
-// allBoxes.forEach(box => {
-
-//     for(i = 0; i < allRonds.length; i++){
-
-//         if(allRonds[i].getAttribute('data-anim') === box.getAttribute('data-anim'))
-
-//     }
-// })
-
-// const y = window.scrollY;
-// console.log(y);
