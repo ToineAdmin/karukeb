@@ -68,7 +68,7 @@ h5{
 
 .banner{
     height: 50vh;
-    background-image: url(/img/ban-kebab.jpg);
+    background-image: url(../../img/ban-kebab.jpg);
     background-size: cover;
     background-position: center;
 }
